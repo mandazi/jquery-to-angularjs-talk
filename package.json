@@ -1,0 +1,24 @@
+{
+  "name": "jquery-to-angularjs-talk",
+  "version": "1.0.0",
+  "description": "Examples from my talk on going from jQuery to Angular JS.",
+  "main": "server.js",
+  "dependencies": {
+    "connect": "latest",
+    "serve-static":"latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mandazi/jquery-to-angularjs-talk.git"
+  },
+  "keywords": [
+    "jquery",
+    "angularjs"
+  ],
+  "author": "Amir Sahib",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mandazi/jquery-to-angularjs-talk/issues"
+  },
+  "homepage": "https://github.com/mandazi/jquery-to-angularjs-talk#readme"
+}
