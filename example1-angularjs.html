@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>From jQuery to AngularJS: A Beginner's Guide</title>
+
+  <!-- Bootstrap -->
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body ng-app="myApp">
+
+  <div class="container" ng-controller="mainController">
+
+    <h1>Example #1: Show/Hide (AngularJS version)</h1>
+    <p>A user is presented with a question. Based on the user's answer, additional content will be shown. We use jQuery to listen to the event of when the user selects an answer and then show the respective content based on the value of what was selected.</p>
+      <hr />
+
+    <div class="form-group">
+      <label class="col-md-2 control-label text-right">Which side of The Force?</label>
+      <div class="col-md-4">
+        <div class="radio">
+          <label for="side-light">
+            <input class="which-side" type="radio" ng-model="side" id="side-light" value="light" /> Light
+          </label>
+        </div>
+        <div class="radio">
+          <label for="side-dark">
+            <input class="which-side" type="radio" ng-model="side" id="side-dark" value="dark" /> Dark
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div ng-show="side == 'dark'" class="dark-side-content">
+      <h3>Welcome to the Dark Side!</h3>
+      <img class="img-responsive" src="images/darth-vader.jpg" />
+    </div>
+
+    <div ng-show="side == 'light'" class="light-side-content">
+      <h3>the Light Side, Welcome to!</h3>
+      <img class="img-responsive" src="images/yoda.jpg" />
+    </div>
+
+  </div>
+
+
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="js/example1-angularjs.js"></script>
+
+</body>
+
+</html>
